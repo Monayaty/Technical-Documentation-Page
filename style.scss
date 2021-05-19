@@ -1,0 +1,149 @@
+*
+{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body 
+{
+	font-family: 'Lato', sans-serif;
+	line-height: 1.5;
+	background-color: #f1f1f1;
+	#navbar
+	{
+		position: fixed;
+		top: 0;
+		left: 0;
+		height: 100%;
+		min-width: 280px;
+		max-width: 300px;
+		border-right: solid 2.5px #333;
+		header
+		{
+			font-size: 1.6rem;
+			text-align: center;
+			padding: 1rem 0;
+
+
+		}
+		ul
+		{
+			list-style: none;
+			overflow-y: auto;
+			overflow-x: hidden;
+			height: 90%;
+			padding: 0;	
+
+			li 
+			{
+				border: solid 1.3px #222;
+				.nav-link
+				{
+					display: block;
+					padding: 0.8rem 1rem 0.8rem 2rem;
+					cursor: pointer;
+					color: #222;
+					text-decoration: none;
+				}	
+			}
+		}
+	}
+	#main-doc
+	{
+		position: absolute;
+		margin-left: 320px;
+		padding: 2rem 1rem;
+		.main-section
+		{
+
+			header
+			{
+				font-size: 2rem;
+				padding: 1rem 0;
+			}
+			article
+			{	
+				padding-left: 1.5rem;
+				margin-bottom: 0.5rem;
+				color: #222;
+				p
+				{
+					margin-bottom: 1rem;
+				}
+				ul
+				{	
+					//list-style: none;
+					margin: 1.3rem 0 0 1.2rem;
+					li
+					{
+
+						margin-bottom: 1rem;
+					}
+				}
+				code
+				{
+					display: block;
+					padding: 1.5rem;
+					text-align: left;
+					background-color: #ddd;
+					margin-bottom: 1rem;
+					border-radius:  7px;
+
+				}
+			}
+		}
+	}
+	
+}
+
+.footer
+{
+	margin: 0.5rem 0 1.5rem 3rem;
+	padding: 0;
+}
+
+@media only screen and (max-width: 815px) {
+
+#navbar 
+{
+	background-color: white;
+    position: absolute;
+    top: 0;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    max-height: 275px;
+    border: none;
+    z-index: 1;
+    border-bottom: 2px solid;
+  
+
+}
+ul 
+	{
+    border: 1px solid;
+    height: 207px;
+	}
+
+  #main-doc {
+    position: relative;
+    margin-left: 0px;
+    margin-top: 270px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  #main-doc {
+    margin-left: -10px;
+  }
+
+  code {
+    margin-left: -20px;
+    width: 100%;
+    padding: 15px;
+    padding-left: 10px;
+    padding-right: 45px;
+    min-width: 233px;
+  }
+}
